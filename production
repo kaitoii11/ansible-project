@@ -1,0 +1,5 @@
+#inventory file for production servers
+
+[webservers]
+
+[dbservers]
