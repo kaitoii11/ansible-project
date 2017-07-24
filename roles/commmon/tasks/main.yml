@@ -1,0 +1,12 @@
+- name: upgrade all packages
+  yum: name=* state=latest
+
+- name: install list of packags
+  yum: name={{item}} state=installed
+  with_items:
+    - ntp
+    - git
+    - python34
+    - python34-lib
+    - python34-devel
+    - python34-pip
